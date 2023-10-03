@@ -1,0 +1,158 @@
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    scroll-behavior: smooth;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0px;
+    padding: 0px;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Open Sans" "Arial" "sans serif";
+    font-size: 18px;
+    line-height: normal; 
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    object-fit: cover;
+}
+
+/* barlow-regular - latin_latin-ext */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/barlow-v12-latin_latin-ext-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* barlow-900 - latin_latin-ext */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/barlow-v12-latin_latin-ext-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }  
+
+/* CSS */
+
+.container {
+    width: 1000px;
+    padding: 0px 20px;
+    margin: 0 auto;
+}
+
+.form__title {
+    font-family: "Barlow";
+    font-weight: 700;
+    text-align: center;
+}
+
+.form__label {
+    color: #333D4B;
+    font-family: "Barlow";
+    font-weight: 400;
+    margin-left: 450px;
+    font-size: 24px;
+}
+
+.form__span {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 4px;
+    transform: translateY(10px);
+}
+
+.form__input:checked + .form__span {
+    background-image: url("../img/tennis.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 80%;
+    background-position: 2px;
+}
+
+.form__spann {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 4px;
+    transform: translateY(10px);
+}
+
+.form__input:checked + .form__spann {
+    background-image: url("../img/basketball.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 80%;
+    background-position: 2px;
+}
+
+.form__spannn {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 4px;
+    transform: translateY(10px);
+}
+
+.form__input:checked + .form__spannn {
+    background-image: url("../img/volleyball.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 80%;
+    background-position: 2px;
+}
+
+.form__spannnn {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 4px;
+    transform: translateY(10px);
+}
+
+.form__input:checked + .form__spannnn {
+    background-image: url("../img/hockey.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 80%;
+    background-position: 2px;
+}
+
+.form__button {
+    border-radius: 6px;
+    background: #66D2CF;
+    border: 1px solid #66D2CF;
+    padding: 20px 40px;
+    color: white;
+    font-family: "Barlow";
+    font-weight: 400;
+    margin-left: 550px;
+}
